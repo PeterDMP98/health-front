@@ -1,0 +1,19 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #fff6f6;
+  position: relative;
+}
+
+.app__footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b3b3b;
+  color: #fff;
+  height: 200px;
+  width: 100%;
+}
