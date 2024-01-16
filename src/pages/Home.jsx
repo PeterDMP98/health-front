@@ -1,6 +1,6 @@
 import { useState } from "react"
 import AlertchangeMoney from "../components/home/AlertChangeMoney"
-import Cart from "../components/home/cart"
+import Cart from "../components/home/Cart"
 import Header from "../components/shared/header/Header"
 
 
