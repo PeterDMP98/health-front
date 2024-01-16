@@ -16,12 +16,9 @@ const Menu = ({menuOpenClose,setmenuOpenClose}) =>{
                 
                 <ul className="menu_list">
                     
-                    <li className="menu_item">Registro de Productos</li>
-                    <li className="menu_item">Registro de Pedidos</li>
-                    <li className="menu_item">Registro de Usuarios</li>
                     <li className="menu_item">Usuarios</li>
                     <li className="menu_item">Historial de Ventas</li>
-                    <li className="menu_item">Productos Vencidos</li>
+                    <li className="menu_item">Todos los Productos</li>
                     <li className="menu_item">Cierre de usuario</li>
                     <li className="menu_item">Todos los Cierres</li>
                 
