@@ -1,23 +1,27 @@
 .cart_product__section{
     display: flex;
     gap: 0.5em;
-    background-color: rgb(221, 236, 250);
+    background-color: rgb(242, 249, 255);
     padding: 0 0.5em;
     
 }
 
-.cart_inf_product{
+.cart_content_inf_product{
+    margin-top: 0.5em ;
     display: flex;
-    flex-direction: column;
+    gap: 1em;
 }
 
-.cart_img_product{
-    max-width: 80px;
-    
+.cart_inf_price_product::before{
+    content: "$";
 }
 
+.cart_inf_cuantity_product::before{
+    content: "und: ";
+}
 .cart_option_product{
     display: flex;
+    margin-left: 90%;
 }
 
 .cart_option_product>*{

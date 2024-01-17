@@ -1,11 +1,17 @@
 import ProductInCart from './ProductInCart';
 import './styles/cart.css'
 
-const Cart = ({setchange}) => {
+const Cart = ({setchange, nequi, setNequi}) => {
+    
+
 
     const handleClickBuy = () =>{
         setchange("on")
     }
+
+    const handleChangeNequi = () => {
+        setNequi(!nequi);
+      };
 
     return(
         <article className="Cart">
@@ -17,12 +23,21 @@ const Cart = ({setchange}) => {
 
 
                 <section className='product__total'>
-                    <p>Cantidad: <i>4</i></p>
-                    <p>Total: <i>$10.000</i></p>
+                    <p className='product_total_acount'></p>
+                    <p className='product_total_total'></p>
                 </section>
 
-                <form className='cart_payment'>
+                <form className={`cart_payment ${nequi ? 'off' : 'on'}`}>
                     <input className='cart_change_payment_input' type="text" placeholder='dinero'/>
+                </form>
+
+                <form className='cart_nequi' >
+                <input
+                    onChange={handleChangeNequi}
+                    className="cart_nequi_input"
+                    type="checkbox"
+                    checked={nequi}
+                />
                 </form>
 
                 <button onClick={handleClickBuy} className='product__btn'>

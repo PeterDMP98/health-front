@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './styles/menu.css'
 
 const Menu = ({menuOpenClose,setmenuOpenClose}) =>{
@@ -8,7 +9,7 @@ const Menu = ({menuOpenClose,setmenuOpenClose}) =>{
 
     return (
         <div className={`Menu ${menuOpenClose}`}>
-            <i onClick={handleClickMenuClose} class='bx bx-x'></i>
+            <i onClick={handleClickMenuClose} className='bx bx-x'></i>
             
             <div className='menu_content_list'>
                 
@@ -16,11 +17,11 @@ const Menu = ({menuOpenClose,setmenuOpenClose}) =>{
                 
                 <ul className="menu_list">
                     
-                    <li className="menu_item">Usuarios</li>
-                    <li className="menu_item">Historial de Ventas</li>
-                    <li className="menu_item">Todos los Productos</li>
+                    <Link to={'/user'} className="menu_item">Usuarios</Link>
+                    <Link to={'/purchases'} className="menu_item">Historial de Ventas</Link>
+                    <Link to={'/all-products'} className="menu_item">Todos los Productos</Link>
                     <li className="menu_item">Cierre de usuario</li>
-                    <li className="menu_item">Todos los Cierres</li>
+                    <Link to={'/all-total-money'} className="menu_item">Todos los Cierres</Link>
                 
                 </ul>
             
