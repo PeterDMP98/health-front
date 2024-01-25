@@ -2,6 +2,8 @@ import { useState } from "react"
 import AlertchangeMoney from "../components/home/AlertChangeMoney"
 import Cart from "../components/home/Cart"
 import FilterHome from "../components/home/FilterHome"
+import '../components/home/styles/home.css'
+import ProductInformations from "../components/home/ProductInformations"
 
 
 const Home = () => {
@@ -11,18 +13,42 @@ const Home = () => {
     
     return (
         <div className="Home">
-            <Cart
-                setchange={setchange}
-                nequi={nequi}
-                setNequi={setNequi}/>
+            
+        <div className="home_content">
+        <FilterHome />
+            <section className="home_cotent_product">
+                <h2 className="home_product_title">Productos</h2>
+                
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+                <ProductInformations/>
+            
+            </section>
 
-
+        </div>
+        
             <AlertchangeMoney
                 change={change}
                 setchange={setchange}
                 nequi={nequi}/>
 
-            <FilterHome/>
+            <Cart
+                setchange={setchange}
+                nequi={nequi}
+                setNequi={setNequi}/>
+
         </div>
 
 

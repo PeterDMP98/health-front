@@ -15,6 +15,7 @@ const Cart = ({setchange, nequi, setNequi}) => {
 
     return(
         <article className="Cart">
+            
             <h2 className='cart_title'>BUY</h2>
 
             <ProductInCart/>
@@ -41,7 +42,7 @@ const Cart = ({setchange, nequi, setNequi}) => {
                 </form>
 
                 <button onClick={handleClickBuy} className='product__btn'>
-                    <i className='bx bx-cart-alt' > Buy</i>
+                    <i className='bx bx-cart-alt cart_buy' > Buy</i>
                 </button>
             </section>
 

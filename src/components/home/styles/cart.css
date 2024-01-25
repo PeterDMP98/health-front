@@ -1,14 +1,15 @@
 .Cart{
     position: fixed;
-    padding-bottom: .5em;
     right: 0;
-    width: 250px;
-    min-height: 93.2%;
+    top: 0;
+    height: 100vh;
     background-color: rgb(180, 234, 250);
     border-left: 2px solid #1819578e;
     display: flex;
     flex-direction: column;
-    gap: 1em;    
+    gap: 1em;
+    min-width: 300px;
+    max-width: 300px;
 }
 
 .cart_title{
@@ -18,14 +19,21 @@
     text-decoration-color: azure;
     margin-top: 1em;
     user-select: none;
+    flex-grow: 10;
+}
+
+.product_cart{
+    flex-grow: 80;
 }
 
 .cart__footer{
-    position: absolute;
-    bottom: 0;
-    padding: 1em 0.5em ;
+    flex-grow: 10;
+    padding: 0.5em ;
     background-color: #4b78f7;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .product__total>*{
@@ -66,7 +74,7 @@
     margin-top: 1.5em;
 }
 
-.bx-cart-alt{
+.cart_buy{
     color: rgb(1, 107, 200);
     font-size: 2em;
     font-weight: bold;

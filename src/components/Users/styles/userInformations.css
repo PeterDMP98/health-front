@@ -1,0 +1,33 @@
+.user_informations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    background-color: rgb(207, 237, 245);
+    padding: 1em 0.5em;
+    border-radius: 0.5em;
+}
+
+.bxs-user-circle{
+    font-size: 2rem;
+    color: rgb(54, 51, 232);
+}
+
+.user_btn{
+    padding: 0.5em 0.6em;
+    border-radius: 1em;
+    font-size: 1rem;
+}
+
+.user_put{
+    background-color: rgb(0, 255, 140);
+}
+
+.user_delete{
+    background-color: rgb(255, 8, 8);
+}
+
+.user_cierres{
+    background-color: rgb(255, 212, 103);
+}

@@ -1,0 +1,32 @@
+.Users{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.users_add{
+    background-color: rgb(141, 141, 247);
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid #2f00ff;
+    margin-bottom: 2.5em;
+}
+
+.users_add>*{
+    font-weight: bold;
+}
+
+.user_content_inf{
+    background-color: rgb(210, 221, 245);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1em 2em;
+}
